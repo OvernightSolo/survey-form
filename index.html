@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Scott's Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help me improve the services I provide.
+    </p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label"
+          >Name<input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            required
+        /></label>
+        <label id="email-label"
+          >Email<input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Enter your email address"
+            required
+        /></label>
+        <label id="number-label"
+          >Age(optional)<input
+            id="number"
+            type="number"
+            name="number"
+            placeholder="Age"
+            min="15"
+            max="120"
+        /></label>
+      </fieldset>
+      <fieldset>
+        <label
+          >What is your favorite thing about me?
+          <select id="dropdown">
+            <option value="1">(select one)</option>
+            <option value="2">Sense of humor</option>
+            <option value="3">Intelligence</option>
+            <option value="4">Style</option>
+            <option value="5">Taste in music</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Would you recommend me to a friend?</label>
+        <label
+          ><input
+            type="radio"
+            name="radio-choice"
+            class="inline"
+            value="definitely"
+          />Definitely
+        </label>
+        <label
+          ><input
+            type="radio"
+            name="radio-choice"
+            class="inline"
+            value="maybe"
+          />Maybe</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="radio-choice"
+            class="inline"
+            value="not-sure"
+          />Not Sure</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="radio-choice"
+            class="inline"
+            value="why"
+          />Why would I do that to my friends?
+        </label>
+      </fieldset>
+      <fieldset>
+        <label
+          >What would you like to see improved? (Check all that apply)</label
+        >
+        <label class="checkboxes">
+          <label
+            ><input type="checkbox" class="inline" value="front" />More quality
+            time with you</label
+          >
+          <label
+            ><input type="checkbox" class="inline" value="back" />Wilingness to
+            compromise</label
+          >
+          <label
+            ><input type="checkbox" class="inline" value="data" />Spend more
+            money on you</label
+          >
+          <label
+            ><input type="checkbox" class="inline" value="challenges" />Be a
+            better listener</label
+          >
+          <label
+            ><input type="checkbox" class="inline" value="open" />Complain less
+            often</label
+          >
+          <label
+            ><input type="checkbox" class="inline" value="help" />Bathe more
+            often</label
+          >
+          <label
+            ><input type="checkbox" class="inline" value="videos" />Lose
+            weight</label
+          >
+          <label
+            ><input type="checkbox" class="inline" value="city" />Spend less
+            time at work</label
+          >
+          <label
+            ><input type="checkbox" class="inline" value="wiki" />Do more around
+            the house</label
+          >
+          <label
+            ><input type="checkbox" class="inline" value="courses" />Clean up my
+            language</label
+          >
+        </label>
+      </fieldset>
+      <fieldset>
+        <label
+          >Any comments or suggestions?
+          <textarea
+            type="textarea"
+            rows="4"
+            cols="25"
+            placeholder="Write something here"
+          ></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
